@@ -13,11 +13,7 @@
 	<artifactId>personapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>personapi</name>
-	<description>Person API developed for digital innovation one course</description>
-
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+	<description>Person API Project</description>
 
 	<dependencies>
 		<dependency>
@@ -97,5 +93,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
