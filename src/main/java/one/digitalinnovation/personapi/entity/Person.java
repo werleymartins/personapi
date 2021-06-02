@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -26,9 +27,11 @@ public class Person {
     @Column(nullable = false)
     private String lastName;
 
+    @CPF
     @Column(nullable = false, unique = true)
     private String cpf;
 
+    @Column(nullable = false)
     private LocalDate birthDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
